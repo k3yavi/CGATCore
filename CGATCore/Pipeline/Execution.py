@@ -585,6 +585,7 @@ def run(**kwargs):
                     ignore_pipe_errors=ignore_pipe_errors),
                 cwd=PARAMS["workingdir"],
                 shell=True,
+                executable="/bin/bash",
                 stdin=subprocess.PIPE,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE)
